@@ -18,6 +18,12 @@
 		AC8626452335A16A006EF32C /* HomeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8626442335A16A006EF32C /* HomeWorker.swift */; };
 		AC8626472335A17C006EF32C /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8626462335A17C006EF32C /* HomeRouter.swift */; };
 		AC86264A2335A1C3006EF32C /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8626492335A1C3006EF32C /* MovieModel.swift */; };
+		AC86264F2335A3A2006EF32C /* DatasourceMoviesCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC86264E2335A3A2006EF32C /* DatasourceMoviesCollectionView.swift */; };
+		AC8626512335A3B1006EF32C /* DelegateMoviesCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8626502335A3B1006EF32C /* DelegateMoviesCollectionView.swift */; };
+		AC8626532335B56C006EF32C /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8626522335B56C006EF32C /* MovieViewModel.swift */; };
+		AC8626572335B935006EF32C /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8626552335B935006EF32C /* MovieCollectionViewCell.swift */; };
+		AC8626582335B935006EF32C /* MovieCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC8626562335B935006EF32C /* MovieCollectionViewCell.xib */; };
+		AC86265B2335B947006EF32C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC86265A2335B947006EF32C /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +52,12 @@
 		AC8626442335A16A006EF32C /* HomeWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorker.swift; sourceTree = "<group>"; };
 		AC8626462335A17C006EF32C /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		AC8626492335A1C3006EF32C /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+		AC86264E2335A3A2006EF32C /* DatasourceMoviesCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatasourceMoviesCollectionView.swift; sourceTree = "<group>"; };
+		AC8626502335A3B1006EF32C /* DelegateMoviesCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateMoviesCollectionView.swift; sourceTree = "<group>"; };
+		AC8626522335B56C006EF32C /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
+		AC8626552335B935006EF32C /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
+		AC8626562335B935006EF32C /* MovieCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCollectionViewCell.xib; sourceTree = "<group>"; };
+		AC86265A2335B947006EF32C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +99,7 @@
 		AC8626192335A008006EF32C /* SkyMobile */ = {
 			isa = PBXGroup;
 			children = (
+				AC8626592335B93B006EF32C /* Utils */,
 				AC86263A2335A0CC006EF32C /* Modules */,
 				AC86261A2335A008006EF32C /* AppDelegate.swift */,
 				AC8626212335A00B006EF32C /* Assets.xcassets */,
@@ -116,6 +129,8 @@
 		AC86263B2335A0D4006EF32C /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				AC8626542335B91F006EF32C /* CustomCollectionCell */,
+				AC86264B2335A33D006EF32C /* Datasource + Delegate MoviesTableView */,
 				AC8626482335A1AA006EF32C /* Model */,
 				AC86263C2335A0DC006EF32C /* Home.storyboard */,
 				AC86263E2335A0E6006EF32C /* HomeViewController.swift */,
@@ -131,8 +146,35 @@
 			isa = PBXGroup;
 			children = (
 				AC8626492335A1C3006EF32C /* MovieModel.swift */,
+				AC8626522335B56C006EF32C /* MovieViewModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		AC86264B2335A33D006EF32C /* Datasource + Delegate MoviesTableView */ = {
+			isa = PBXGroup;
+			children = (
+				AC86264E2335A3A2006EF32C /* DatasourceMoviesCollectionView.swift */,
+				AC8626502335A3B1006EF32C /* DelegateMoviesCollectionView.swift */,
+			);
+			path = "Datasource + Delegate MoviesTableView";
+			sourceTree = "<group>";
+		};
+		AC8626542335B91F006EF32C /* CustomCollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				AC8626552335B935006EF32C /* MovieCollectionViewCell.swift */,
+				AC8626562335B935006EF32C /* MovieCollectionViewCell.xib */,
+			);
+			path = CustomCollectionCell;
+			sourceTree = "<group>";
+		};
+		AC8626592335B93B006EF32C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AC86265A2335B947006EF32C /* Constants.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +261,7 @@
 				AC86263D2335A0DC006EF32C /* Home.storyboard in Resources */,
 				AC8626252335A00B006EF32C /* LaunchScreen.storyboard in Resources */,
 				AC8626222335A00B006EF32C /* Assets.xcassets in Resources */,
+				AC8626582335B935006EF32C /* MovieCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,12 +280,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC86264A2335A1C3006EF32C /* MovieModel.swift in Sources */,
+				AC8626532335B56C006EF32C /* MovieViewModel.swift in Sources */,
 				AC8626412335A157006EF32C /* HomePresenter.swift in Sources */,
 				AC8626472335A17C006EF32C /* HomeRouter.swift in Sources */,
 				AC86261B2335A008006EF32C /* AppDelegate.swift in Sources */,
+				AC86264F2335A3A2006EF32C /* DatasourceMoviesCollectionView.swift in Sources */,
 				AC86263F2335A0E6006EF32C /* HomeViewController.swift in Sources */,
+				AC8626512335A3B1006EF32C /* DelegateMoviesCollectionView.swift in Sources */,
+				AC8626572335B935006EF32C /* MovieCollectionViewCell.swift in Sources */,
 				AC8626452335A16A006EF32C /* HomeWorker.swift in Sources */,
 				AC8626432335A161006EF32C /* HomeInteractor.swift in Sources */,
+				AC86265B2335B947006EF32C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,3 +7,21 @@
 //
 
 import Foundation
+protocol HomePresenterLogic {
+    func displayLoading(bool: Bool)
+    func presentMovies(movies: [MovieViewModel])
+}
+
+class HomePresenter: HomePresenterLogic {
+
+    weak var vcDelegate: HomeViewControllerDisplayLogic?
+    
+    func displayLoading(bool: Bool) {
+        vcDelegate?.displayLoading(bool: bool)
+    }
+
+    func presentMovies(movies: [MovieViewModel]) {
+        vcDelegate?.displayMovies(movies: movies)
+        vcDelegate?.displayLoading(bool: false)
+    }
+}
