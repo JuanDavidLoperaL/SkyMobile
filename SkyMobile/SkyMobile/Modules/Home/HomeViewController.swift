@@ -36,11 +36,23 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.isNavigationBarHidden = true
         setupDelegates()
         configureUI()
         interactor?.fetchMovies()
         // Do any additional setup after loading the view.
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.isNavigationBarHidden = true
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == Constants.Segue.homeToHomeDetail {
+            if let homeDetailVC = segue.destination as? HomeDetailViewController {
+                homeDetailVC.movie = sender as? MovieModel
+            }
+        }
     }
 }
 
@@ -59,6 +71,7 @@ extension HomeViewController {
         router.dataStore = interactor
         router.homeVC = viewController
 
+        delegateMoviesCollectionView.delegate =  self
         moviesCollectionView.dataSource = datasourceMoviesCollectionView
         moviesCollectionView.delegate = delegateMoviesCollectionView
     }
@@ -66,6 +79,7 @@ extension HomeViewController {
     private func configureUI() {
         cinemaTitle.text = "Cine SKY"
         cinemaTitle.textColor = .white
+        cinemaTitle.font = UIFont.boldSystemFont(ofSize: 24)
         cinemaDescriptionLabel.text = "Uma seleção de filmes imperdives:"
         cinemaDescriptionLabel.textColor = .white
         loadingLabel.text = "Carregando filmes"
@@ -110,5 +124,6 @@ extension HomeViewController: HomeViewControllerDisplayLogic {
 extension HomeViewController: DelegateMoviesCollectionViewProtocol {
     func movieSelected(index: Int) {
         interactor?.movieSelected(index: index)
+        router?.showDetailView()
     }
 }

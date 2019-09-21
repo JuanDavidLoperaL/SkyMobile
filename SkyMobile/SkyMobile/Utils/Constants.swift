@@ -9,6 +9,9 @@
 import Foundation
 
 struct Constants {
+    struct Segue {
+        static let homeToHomeDetail = "homeToHomeDetail"
+    }
     struct Home {
         struct CollectionView {
             struct CellIdentifier {
@@ -17,6 +20,18 @@ struct Constants {
 
             struct NIB {
                 static let movieCellNib = "MovieCollectionViewCell"
+            }
+        }
+    }
+
+    struct HomeDetail {
+        struct TableView {
+            struct CellIdentifier {
+                static let detailMovieCellIdentifier = "detailMovieCell"
+            }
+
+            struct NIB {
+                static let detailMovieNib = "DetailMovieTableViewCell"
             }
         }
     }

@@ -9,7 +9,7 @@
 import UIKit
 
 @objc protocol HomeRouterLogic {
-    func showDetailView(segue: UIStoryboardSegue?)
+    func showDetailView()
 }
 
 protocol HomeRouterDataPassing {
@@ -20,7 +20,7 @@ class HomeRouter: NSObject, HomeRouterLogic, HomeRouterDataPassing {
     var dataStore: HomeInteractorDataStore?
     weak var homeVC: HomeViewController?
     
-    func showDetailView(segue: UIStoryboardSegue?) {
-        
+    func showDetailView() {
+        homeVC?.performSegue(withIdentifier: Constants.Segue.homeToHomeDetail, sender: dataStore?.movieSelect)
     }
 }
