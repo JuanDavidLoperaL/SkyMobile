@@ -24,6 +24,16 @@
 		AC8626572335B935006EF32C /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8626552335B935006EF32C /* MovieCollectionViewCell.swift */; };
 		AC8626582335B935006EF32C /* MovieCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC8626562335B935006EF32C /* MovieCollectionViewCell.xib */; };
 		AC86265B2335B947006EF32C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC86265A2335B947006EF32C /* Constants.swift */; };
+		AC86265E2335C13B006EF32C /* HomeDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC86265D2335C13B006EF32C /* HomeDetail.storyboard */; };
+		AC8626602335C196006EF32C /* HomeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC86265F2335C196006EF32C /* HomeDetailViewController.swift */; };
+		AC8626622335C26C006EF32C /* HomeDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8626612335C26C006EF32C /* HomeDetailRouter.swift */; };
+		AC8626642335C332006EF32C /* HomeDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8626632335C332006EF32C /* HomeDetailPresenter.swift */; };
+		AC8626662335C33B006EF32C /* HomeDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8626652335C33B006EF32C /* HomeDetailInteractor.swift */; };
+		AC8626692335C443006EF32C /* DatasourceDetailMovieTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8626682335C443006EF32C /* DatasourceDetailMovieTableView.swift */; };
+		AC86266B2335C462006EF32C /* DelegateDetailMovieTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC86266A2335C462006EF32C /* DelegateDetailMovieTableView.swift */; };
+		AC86266F2335C53D006EF32C /* DetailMovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC86266D2335C53D006EF32C /* DetailMovieTableViewCell.swift */; };
+		AC8626702335C53D006EF32C /* DetailMovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC86266E2335C53D006EF32C /* DetailMovieTableViewCell.xib */; };
+		AC8626732335CC0F006EF32C /* MovieDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8626722335CC0F006EF32C /* MovieDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +68,16 @@
 		AC8626552335B935006EF32C /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
 		AC8626562335B935006EF32C /* MovieCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCollectionViewCell.xib; sourceTree = "<group>"; };
 		AC86265A2335B947006EF32C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AC86265D2335C13B006EF32C /* HomeDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeDetail.storyboard; sourceTree = "<group>"; };
+		AC86265F2335C196006EF32C /* HomeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailViewController.swift; sourceTree = "<group>"; };
+		AC8626612335C26C006EF32C /* HomeDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailRouter.swift; sourceTree = "<group>"; };
+		AC8626632335C332006EF32C /* HomeDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailPresenter.swift; sourceTree = "<group>"; };
+		AC8626652335C33B006EF32C /* HomeDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailInteractor.swift; sourceTree = "<group>"; };
+		AC8626682335C443006EF32C /* DatasourceDetailMovieTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatasourceDetailMovieTableView.swift; sourceTree = "<group>"; };
+		AC86266A2335C462006EF32C /* DelegateDetailMovieTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateDetailMovieTableView.swift; sourceTree = "<group>"; };
+		AC86266D2335C53D006EF32C /* DetailMovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovieTableViewCell.swift; sourceTree = "<group>"; };
+		AC86266E2335C53D006EF32C /* DetailMovieTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailMovieTableViewCell.xib; sourceTree = "<group>"; };
+		AC8626722335CC0F006EF32C /* MovieDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +141,7 @@
 		AC86263A2335A0CC006EF32C /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				AC86265C2335C105006EF32C /* Home-Detail */,
 				AC86263B2335A0D4006EF32C /* Home */,
 			);
 			path = Modules;
@@ -175,6 +196,47 @@
 				AC86265A2335B947006EF32C /* Constants.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		AC86265C2335C105006EF32C /* Home-Detail */ = {
+			isa = PBXGroup;
+			children = (
+				AC8626712335CC04006EF32C /* Model */,
+				AC86266C2335C51E006EF32C /* CustomTableViewCell */,
+				AC8626672335C424006EF32C /* Datasource + Delegate TableView */,
+				AC86265D2335C13B006EF32C /* HomeDetail.storyboard */,
+				AC86265F2335C196006EF32C /* HomeDetailViewController.swift */,
+				AC8626612335C26C006EF32C /* HomeDetailRouter.swift */,
+				AC8626632335C332006EF32C /* HomeDetailPresenter.swift */,
+				AC8626652335C33B006EF32C /* HomeDetailInteractor.swift */,
+			);
+			path = "Home-Detail";
+			sourceTree = "<group>";
+		};
+		AC8626672335C424006EF32C /* Datasource + Delegate TableView */ = {
+			isa = PBXGroup;
+			children = (
+				AC8626682335C443006EF32C /* DatasourceDetailMovieTableView.swift */,
+				AC86266A2335C462006EF32C /* DelegateDetailMovieTableView.swift */,
+			);
+			path = "Datasource + Delegate TableView";
+			sourceTree = "<group>";
+		};
+		AC86266C2335C51E006EF32C /* CustomTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				AC86266D2335C53D006EF32C /* DetailMovieTableViewCell.swift */,
+				AC86266E2335C53D006EF32C /* DetailMovieTableViewCell.xib */,
+			);
+			path = CustomTableViewCell;
+			sourceTree = "<group>";
+		};
+		AC8626712335CC04006EF32C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC8626722335CC0F006EF32C /* MovieDetailViewModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +320,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC86265E2335C13B006EF32C /* HomeDetail.storyboard in Resources */,
 				AC86263D2335A0DC006EF32C /* Home.storyboard in Resources */,
 				AC8626252335A00B006EF32C /* LaunchScreen.storyboard in Resources */,
+				AC8626702335C53D006EF32C /* DetailMovieTableViewCell.xib in Resources */,
 				AC8626222335A00B006EF32C /* Assets.xcassets in Resources */,
 				AC8626582335B935006EF32C /* MovieCollectionViewCell.xib in Resources */,
 			);
@@ -280,17 +344,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC86264A2335A1C3006EF32C /* MovieModel.swift in Sources */,
+				AC8626692335C443006EF32C /* DatasourceDetailMovieTableView.swift in Sources */,
 				AC8626532335B56C006EF32C /* MovieViewModel.swift in Sources */,
 				AC8626412335A157006EF32C /* HomePresenter.swift in Sources */,
+				AC86266B2335C462006EF32C /* DelegateDetailMovieTableView.swift in Sources */,
 				AC8626472335A17C006EF32C /* HomeRouter.swift in Sources */,
+				AC8626622335C26C006EF32C /* HomeDetailRouter.swift in Sources */,
 				AC86261B2335A008006EF32C /* AppDelegate.swift in Sources */,
 				AC86264F2335A3A2006EF32C /* DatasourceMoviesCollectionView.swift in Sources */,
 				AC86263F2335A0E6006EF32C /* HomeViewController.swift in Sources */,
 				AC8626512335A3B1006EF32C /* DelegateMoviesCollectionView.swift in Sources */,
 				AC8626572335B935006EF32C /* MovieCollectionViewCell.swift in Sources */,
+				AC8626642335C332006EF32C /* HomeDetailPresenter.swift in Sources */,
 				AC8626452335A16A006EF32C /* HomeWorker.swift in Sources */,
+				AC8626662335C33B006EF32C /* HomeDetailInteractor.swift in Sources */,
+				AC86266F2335C53D006EF32C /* DetailMovieTableViewCell.swift in Sources */,
+				AC8626732335CC0F006EF32C /* MovieDetailViewModel.swift in Sources */,
 				AC8626432335A161006EF32C /* HomeInteractor.swift in Sources */,
 				AC86265B2335B947006EF32C /* Constants.swift in Sources */,
+				AC8626602335C196006EF32C /* HomeDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

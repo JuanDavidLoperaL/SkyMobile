@@ -19,19 +19,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJG-wG-Dco">
-                                <rect key="frame" x="50" y="138" width="0.0" height="0.0"/>
+                                <rect key="frame" x="50" y="103" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OW5-IO-drP">
-                                <rect key="frame" x="16" y="170" width="0.0" height="0.0"/>
+                                <rect key="frame" x="16" y="135" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6M6-Ub-uLE">
-                                <rect key="frame" x="0.0" y="317" width="414" height="545"/>
+                                <rect key="frame" x="0.0" y="151" width="414" height="711"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Jfa-Qe-de1">
                                     <size key="itemSize" width="50" height="50"/>
@@ -81,7 +81,8 @@
                         <constraints>
                             <constraint firstItem="6M6-Ub-uLE" firstAttribute="leading" secondItem="PWs-oB-IJE" secondAttribute="leading" id="FTx-xU-bdg"/>
                             <constraint firstItem="OW5-IO-drP" firstAttribute="top" secondItem="DJG-wG-Dco" secondAttribute="bottom" constant="32" id="L4F-q8-5u6"/>
-                            <constraint firstItem="DJG-wG-Dco" firstAttribute="top" secondItem="PWs-oB-IJE" secondAttribute="top" constant="50" id="SY5-Ba-me8"/>
+                            <constraint firstItem="6M6-Ub-uLE" firstAttribute="top" secondItem="OW5-IO-drP" secondAttribute="bottom" constant="16" id="R7y-Ho-W5a"/>
+                            <constraint firstItem="DJG-wG-Dco" firstAttribute="top" secondItem="PWs-oB-IJE" secondAttribute="top" constant="15" id="SY5-Ba-me8"/>
                             <constraint firstItem="PWs-oB-IJE" firstAttribute="bottom" secondItem="6M6-Ub-uLE" secondAttribute="bottom" id="VEe-xz-V4K"/>
                             <constraint firstItem="PWs-oB-IJE" firstAttribute="bottom" secondItem="ruV-bM-eW3" secondAttribute="bottom" id="ZuW-Wa-fAd"/>
                             <constraint firstItem="PWs-oB-IJE" firstAttribute="trailing" secondItem="ruV-bM-eW3" secondAttribute="trailing" id="dMC-tm-Xmj"/>
@@ -89,7 +90,6 @@
                             <constraint firstItem="PWs-oB-IJE" firstAttribute="trailing" secondItem="6M6-Ub-uLE" secondAttribute="trailing" id="dWV-7U-Z8I"/>
                             <constraint firstItem="ruV-bM-eW3" firstAttribute="leading" secondItem="PWs-oB-IJE" secondAttribute="leading" id="dsC-SD-J5e"/>
                             <constraint firstItem="OW5-IO-drP" firstAttribute="leading" secondItem="PWs-oB-IJE" secondAttribute="leading" constant="16" id="irf-OT-BlE"/>
-                            <constraint firstItem="6M6-Ub-uLE" firstAttribute="top" secondItem="OW5-IO-drP" secondAttribute="bottom" constant="147" id="ujS-bF-y1J"/>
                             <constraint firstItem="DJG-wG-Dco" firstAttribute="leading" secondItem="PWs-oB-IJE" secondAttribute="leading" constant="50" id="v3w-q3-mOO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PWs-oB-IJE"/>
@@ -102,11 +102,20 @@
                         <outlet property="loadingLabel" destination="SZr-WY-x8J" id="X6H-Qs-lmj"/>
                         <outlet property="moviesCollectionView" destination="6M6-Ub-uLE" id="m46-Tv-1XB"/>
                         <outlet property="overlayLoadingView" destination="ruV-bM-eW3" id="OA6-3q-M2M"/>
+                        <segue destination="DvC-Je-Wmc" kind="show" identifier="homeToHomeDetail" id="ZFL-Eu-epr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zOe-rO-gi0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1115.9420289855072" y="150.66964285714286"/>
+        </scene>
+        <!--HomeDetail-->
+        <scene sceneID="5ly-oZ-SmJ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="HomeDetail" id="DvC-Je-Wmc" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oVf-7v-Bh4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1854" y="8"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GN5-9G-YQh">

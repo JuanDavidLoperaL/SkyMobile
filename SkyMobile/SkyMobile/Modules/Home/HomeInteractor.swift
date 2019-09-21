@@ -41,10 +41,10 @@ class HomeInteractor: HomeInteractorBusinessLogic, HomeInteractorDataStore {
 }
 
 extension HomeInteractor {
-    private func transformInMoviesViewModel(movies: [MovieModel]) -> [MovieViewModel] {
+    func transformInMoviesViewModel(movies: [MovieModel]) -> [MovieViewModel] {
         return movies.map({ (movieModel) -> MovieViewModel in
             let imgURL = URL(string: movieModel.cover_url)
-            let imageData = try? Data(contentsOf: imgURL!)
+            let imageData = try? Data(contentsOf: imgURL ?? URL(fileURLWithPath: ""))
             let movie = MovieViewModel(name: movieModel.title, urlImage: imageData ?? Data())
             return movie
         })
