@@ -13,6 +13,11 @@
 		AC8626302335A00C006EF32C /* SkyMobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC86262F2335A00C006EF32C /* SkyMobileTests.swift */; };
 		AC86263D2335A0DC006EF32C /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC86263C2335A0DC006EF32C /* Home.storyboard */; };
 		AC86263F2335A0E6006EF32C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC86263E2335A0E6006EF32C /* HomeViewController.swift */; };
+		AC8626412335A157006EF32C /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8626402335A157006EF32C /* HomePresenter.swift */; };
+		AC8626432335A161006EF32C /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8626422335A161006EF32C /* HomeInteractor.swift */; };
+		AC8626452335A16A006EF32C /* HomeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8626442335A16A006EF32C /* HomeWorker.swift */; };
+		AC8626472335A17C006EF32C /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8626462335A17C006EF32C /* HomeRouter.swift */; };
+		AC86264A2335A1C3006EF32C /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8626492335A1C3006EF32C /* MovieModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,11 @@
 		AC8626312335A00C006EF32C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC86263C2335A0DC006EF32C /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		AC86263E2335A0E6006EF32C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		AC8626402335A157006EF32C /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		AC8626422335A161006EF32C /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		AC8626442335A16A006EF32C /* HomeWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorker.swift; sourceTree = "<group>"; };
+		AC8626462335A17C006EF32C /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		AC8626492335A1C3006EF32C /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,10 +116,23 @@
 		AC86263B2335A0D4006EF32C /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				AC8626482335A1AA006EF32C /* Model */,
 				AC86263C2335A0DC006EF32C /* Home.storyboard */,
 				AC86263E2335A0E6006EF32C /* HomeViewController.swift */,
+				AC8626402335A157006EF32C /* HomePresenter.swift */,
+				AC8626422335A161006EF32C /* HomeInteractor.swift */,
+				AC8626442335A16A006EF32C /* HomeWorker.swift */,
+				AC8626462335A17C006EF32C /* HomeRouter.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		AC8626482335A1AA006EF32C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC8626492335A1C3006EF32C /* MovieModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,8 +236,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC86264A2335A1C3006EF32C /* MovieModel.swift in Sources */,
+				AC8626412335A157006EF32C /* HomePresenter.swift in Sources */,
+				AC8626472335A17C006EF32C /* HomeRouter.swift in Sources */,
 				AC86261B2335A008006EF32C /* AppDelegate.swift in Sources */,
 				AC86263F2335A0E6006EF32C /* HomeViewController.swift in Sources */,
+				AC8626452335A16A006EF32C /* HomeWorker.swift in Sources */,
+				AC8626432335A161006EF32C /* HomeInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
