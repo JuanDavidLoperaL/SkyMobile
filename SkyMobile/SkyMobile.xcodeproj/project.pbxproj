@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC86261B2335A008006EF32C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC86261A2335A008006EF32C /* AppDelegate.swift */; };
+		AC86261D2335A008006EF32C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC86261C2335A008006EF32C /* ViewController.swift */; };
+		AC8626202335A008006EF32C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC86261E2335A008006EF32C /* Main.storyboard */; };
+		AC8626222335A00B006EF32C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC8626212335A00B006EF32C /* Assets.xcassets */; };
+		AC8626252335A00B006EF32C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC8626232335A00B006EF32C /* LaunchScreen.storyboard */; };
+		AC8626302335A00C006EF32C /* SkyMobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC86262F2335A00C006EF32C /* SkyMobileTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AC86262C2335A00C006EF32C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC86260F2335A008006EF32C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC8626162335A008006EF32C;
+			remoteInfo = SkyMobile;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AC8626172335A008006EF32C /* SkyMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC86261A2335A008006EF32C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AC86261C2335A008006EF32C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AC86261F2335A008006EF32C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AC8626212335A00B006EF32C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC8626242335A00B006EF32C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AC8626262335A00B006EF32C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC86262B2335A00C006EF32C /* SkyMobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC86262F2335A00C006EF32C /* SkyMobileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyMobileTests.swift; sourceTree = "<group>"; };
+		AC8626312335A00C006EF32C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC8626142335A008006EF32C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC8626282335A00C006EF32C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC86260E2335A008006EF32C = {
+			isa = PBXGroup;
+			children = (
+				AC8626192335A008006EF32C /* SkyMobile */,
+				AC86262E2335A00C006EF32C /* SkyMobileTests */,
+				AC8626182335A008006EF32C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AC8626182335A008006EF32C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC8626172335A008006EF32C /* SkyMobile.app */,
+				AC86262B2335A00C006EF32C /* SkyMobileTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC8626192335A008006EF32C /* SkyMobile */ = {
+			isa = PBXGroup;
+			children = (
+				AC86261A2335A008006EF32C /* AppDelegate.swift */,
+				AC86261C2335A008006EF32C /* ViewController.swift */,
+				AC86261E2335A008006EF32C /* Main.storyboard */,
+				AC8626212335A00B006EF32C /* Assets.xcassets */,
+				AC8626232335A00B006EF32C /* LaunchScreen.storyboard */,
+				AC8626262335A00B006EF32C /* Info.plist */,
+			);
+			path = SkyMobile;
+			sourceTree = "<group>";
+		};
+		AC86262E2335A00C006EF32C /* SkyMobileTests */ = {
+			isa = PBXGroup;
+			children = (
+				AC86262F2335A00C006EF32C /* SkyMobileTests.swift */,
+				AC8626312335A00C006EF32C /* Info.plist */,
+			);
+			path = SkyMobileTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC8626162335A008006EF32C /* SkyMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC8626342335A00C006EF32C /* Build configuration list for PBXNativeTarget "SkyMobile" */;
+			buildPhases = (
+				AC8626132335A008006EF32C /* Sources */,
+				AC8626142335A008006EF32C /* Frameworks */,
+				AC8626152335A008006EF32C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SkyMobile;
+			productName = SkyMobile;
+			productReference = AC8626172335A008006EF32C /* SkyMobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AC86262A2335A00C006EF32C /* SkyMobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC8626372335A00C006EF32C /* Build configuration list for PBXNativeTarget "SkyMobileTests" */;
+			buildPhases = (
+				AC8626272335A00C006EF32C /* Sources */,
+				AC8626282335A00C006EF32C /* Frameworks */,
+				AC8626292335A00C006EF32C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC86262D2335A00C006EF32C /* PBXTargetDependency */,
+			);
+			name = SkyMobileTests;
+			productName = SkyMobileTests;
+			productReference = AC86262B2335A00C006EF32C /* SkyMobileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC86260F2335A008006EF32C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Juan David Lopera Lopez";
+				TargetAttributes = {
+					AC8626162335A008006EF32C = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					AC86262A2335A00C006EF32C = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = AC8626162335A008006EF32C;
+					};
+				};
+			};
+			buildConfigurationList = AC8626122335A008006EF32C /* Build configuration list for PBXProject "SkyMobile" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC86260E2335A008006EF32C;
+			productRefGroup = AC8626182335A008006EF32C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC8626162335A008006EF32C /* SkyMobile */,
+				AC86262A2335A00C006EF32C /* SkyMobileTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC8626152335A008006EF32C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC8626252335A00B006EF32C /* LaunchScreen.storyboard in Resources */,
+				AC8626222335A00B006EF32C /* Assets.xcassets in Resources */,
+				AC8626202335A008006EF32C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC8626292335A00C006EF32C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC8626132335A008006EF32C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC86261D2335A008006EF32C /* ViewController.swift in Sources */,
+				AC86261B2335A008006EF32C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC8626272335A00C006EF32C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC8626302335A00C006EF32C /* SkyMobileTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC86262D2335A00C006EF32C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC8626162335A008006EF32C /* SkyMobile */;
+			targetProxy = AC86262C2335A00C006EF32C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AC86261E2335A008006EF32C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC86261F2335A008006EF32C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AC8626232335A00B006EF32C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC8626242335A00B006EF32C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC8626322335A00C006EF32C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AC8626332335A00C006EF32C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC8626352335A00C006EF32C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69845R2YL4;
+				INFOPLIST_FILE = SkyMobile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JuanCompany.SkyMobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AC8626362335A00C006EF32C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69845R2YL4;
+				INFOPLIST_FILE = SkyMobile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JuanCompany.SkyMobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AC8626382335A00C006EF32C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69845R2YL4;
+				INFOPLIST_FILE = SkyMobileTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JuanCompany.SkyMobileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SkyMobile.app/SkyMobile";
+			};
+			name = Debug;
+		};
+		AC8626392335A00C006EF32C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69845R2YL4;
+				INFOPLIST_FILE = SkyMobileTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JuanCompany.SkyMobileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SkyMobile.app/SkyMobile";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC8626122335A008006EF32C /* Build configuration list for PBXProject "SkyMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC8626322335A00C006EF32C /* Debug */,
+				AC8626332335A00C006EF32C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC8626342335A00C006EF32C /* Build configuration list for PBXNativeTarget "SkyMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC8626352335A00C006EF32C /* Debug */,
+				AC8626362335A00C006EF32C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC8626372335A00C006EF32C /* Build configuration list for PBXNativeTarget "SkyMobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC8626382335A00C006EF32C /* Debug */,
+				AC8626392335A00C006EF32C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC86260F2335A008006EF32C /* Project object */;
+}
